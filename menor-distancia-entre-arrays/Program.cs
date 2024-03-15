@@ -3,8 +3,8 @@
 class Program{
 
     static void Main(){
-        int[] array1 = [1, 4, 9, 2 ,12];
-        int[] array2 = [7, 18, 31, 4, 7];
+        int[] array1 = [1, 4, 9, 2 ,12, 21, 14, 13, 29, 17, 44, 90];
+        int[] array2 = [7, 18, 31, 6, 16, 19, 8, 15, 36, 53, 24, 52];
 
         int minDistance = FindMinDistance(array1, array2);
 
