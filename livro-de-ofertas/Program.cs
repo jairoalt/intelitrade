@@ -70,13 +70,13 @@ public class OrderBook{
 
     public void InsertOrder(Order order){
         if(order.Position <= 0){
-            throw new ArgumentException("Posição do Livro Inválida.");
+            throw new ArgumentException("Posição Inválida.");
         }
         if(order.Value <= 0){
-            throw new ArgumentException("Valor do Livro Inválido.");
+            throw new ArgumentException("Valor Inválido.");
         }
         if(order.Quantity <= 0){
-            throw new ArgumentException("Quantidade de Livros Inválida.");
+            throw new ArgumentException("Quantidade Inválida.");
         }
         orders.Add(order);
     }
@@ -87,7 +87,7 @@ public class OrderBook{
             orders[index].Value = order.Value;
             orders[index].Quantity = order.Quantity;
         }else{
-            throw new ArgumentException("Posição de Livro Não Encontrada");
+            throw new ArgumentException("Posição Não Encontrada");
         }  
     }
 
